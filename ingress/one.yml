@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: swiggy
+      app: paytm
   template:
     metadata:
       labels:
-        app: swiggy
+        app: paytm
     spec:
       containers:
       - name: cont-1
-        image: nginx
+        image: rahamshaik007/paytmmovies:latest
         ports:
         - containerPort: 80
         env:
@@ -30,4 +30,4 @@ spec:
   ports:
   - port: 80
   selector:
-    app: swiggy
+    app: paytm
